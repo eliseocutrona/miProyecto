@@ -44,6 +44,11 @@ nav {
 
 .colorRosa {
   color: #ffcccc;
+  transition: 1s;
+}
+
+.colorRosa:hover {
+  transform: scale(2);
 }
 
 .bold {
@@ -69,7 +74,7 @@ section {
 /* flex-wrap: wrap;
 } */
 
- .alignContent {
+.alignContent {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -108,6 +113,11 @@ footer {
   font-weight: bold;
   display: flex;
   justify-content: right;
+  transition: 1s;
+}
+
+footer:hover {
+  transform: scale(1.01);
 }
 
 .footerGrid {
@@ -124,6 +134,18 @@ h1 {
   font-family: "Corinthia", cursive;
   font-size: 50px;
   letter-spacing: 5px;
+  transition: 1s;
+}
+
+h1:hover {
+  transform: scale(1.05);
+}
+h2 {
+  transition: 1s;
+}
+
+h2:hover {
+  transform: scale(1.05);
 }
 
 a {
@@ -153,6 +175,13 @@ nav ul {
 
 ul {
   list-style: none;
+}
+i {
+  transition: 1s;
+}
+
+i:hover {
+  transform: scale(1.2);
 }
 
 .size25 {
@@ -216,7 +245,48 @@ p {
 img {
   max-width: 100%;
   max-height: 100%;
+  transition: 1s;
 }
+
+img:hover {
+  transform: scale(1.05);
+}
+
+label {
+  transition: 1s;
+}
+
+label:hover {
+  transform: scale(1.05);
+}
+
+textarea {
+  transition: 1s;
+}
+textarea:hover {
+  transform: scale(1.05);
+}
+
+input {
+  transition: 1s;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+svg {
+  transition: 1s;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+:root {
+  --animate-duration: 4s;
+  --animate-delay: 1s;
+}
+
 .logo {
   /* background-color: black; */
   border-radius: 50px;
@@ -380,6 +450,13 @@ input[type="reset"] {
   clear: both;
 }
 
+.showUp {
+  transition: 1s;
+}
+.showUp:hover {
+  transform: scale(1.1);
+}
+
 /* media queries*/
 /* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
 
@@ -443,7 +520,9 @@ input[type="reset"] {
       "img30  img30 img30 img30 img30  img30"
       "img32  img32 img32 img31 img31  img31"
       "img33  img33 img33 img33 img33  img33";
-    grid-gap: 15px;
+    grid-gap: 20px;
+    margin: 15px;
+    padding: 15px;
     justify-items: stretch;
   }
 
