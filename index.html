@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lincoln Eventos</title>
 
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,11 +40,11 @@
   </head>
 
   <body>
-    <div class="bodyGrid">
-      <header class="headerGrid">
+    <div class="">
+      <header class="container-fluid sticky-top">
         <!-- Header -->
 
-        <div class="size75">
+        <div class="size75 row">
           <a href="index.html">
             <img
               src="images/header/Logo.jpg"
@@ -48,73 +56,114 @@
         <!-- BANNER CAROUSEL-->
       </header>
 
-      <!-- NAV -->
-      <nav class="navGrid">
-        <ul>
-          <li>
-            <a href="index.html" class="colorRosa"> Inicio </a>
-          </li>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <button
+          class="navbar-toggler bgColorPink"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <li>
-            <a href="pages/services.html" class="colorRosa"> Servicios </a>
-          </li>
-          <li>
-            <a href="pages/team.html" class="colorRosa"> Staff </a>
-          </li>
-          <li>
-            <a href="pages/work.html" class="colorRosa"> Nuestros Trabajos </a>
-          </li>
-          <li>
-            <a href="pages/contact.html" class="colorRosa"> Contacto</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="colorRosa"> Inicio </a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="pages/services.html" class="colorRosa"> Servicios </a>
+            </li>
+
+            <li>
+              <a href="pages/team.html" class="colorRosa"> Staff </a>
+            </li>
+            <li>
+              <a href="pages/work.html" class="colorRosa">
+                Nuestros Trabajos
+              </a>
+            </li>
+            <li>
+              <a href="pages/contact.html" class="colorRosa"> Contacto</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <!-- Main  -->
 
-      <main class="center mainGrid animate__animated animate__fadeIn">
-        <h1>Catering Lincoln</h1>
-        <h2>- Eventos -</h2>
-      </main>
-      <!-- Inicio de Sección -->
-      <!-- <section class="alignContent sectionGrid"> -->
+      <main class="container-fluid animate__animated animate__fadeIn">
+        <div
+          class="row text-center d-flex flex-row-reverse justify-content-center"
+        >
+          <!-- text-center d-flex justify-content-center align-items-center -->
 
-      <section class="sectionGrid center animate__animated animate__fadeIn">
-        <article>
-          <div>
-            <img src="images/index/Foto de Pantalla.PNG" alt="Foto de Boda" />
+          <div class="col-md-6">
+            <div>
+              <h1 class="">Catering Lincoln</h1>
+              <h2 class="">- Eventos -</h2>
+            </div>
           </div>
-        </article>
-      </section>
-      <!-- Fin de Sección -->
+
+          <div class="col-md-6">
+            <img
+              src="images/index/Foto de Pantalla.PNG"
+              alt="Foto de Boda"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </main>
+      <!-- Fin de Main -->
 
       <!-- Footer -->
 
-      <footer class="footerGrid fixed animate__animated animate__fadeIn">
+      <footer
+        class="fixed-bottom d-flex justify-content-around animate__animated animate__fadeIn"
+      >
         <div>
-          <div class="center">
-            SEGUINOS EN NUESTRAS REDES
-            <span> | </span>
-            <a
-              href="https://www.facebook.com/lincolneventoslp"
-              target="_blank"
-              class="redes"
-            >
-              <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            </a>
+          SEGUINOS EN NUESTRAS REDES
+          <span> | </span>
+          <a
+            href="https://www.facebook.com/lincolneventoslp"
+            target="_blank"
+            class="redes"
+          >
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          </a>
 
-            <span> | </span>
+          <span> | </span>
 
-            <a
-              href="https://www.instagram.com/lincolneventos/"
-              target="_blank"
-              class="redes"
-            >
-              <i class="fa fa-instagram w3-hover-opacity"></i>
-            </a>
-          </div>
+          <a
+            href="https://www.instagram.com/lincolneventos/"
+            target="_blank"
+            class="redes"
+          >
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+          </a>
         </div>
       </footer>
     </div>
+
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

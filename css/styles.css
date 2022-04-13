@@ -32,9 +32,7 @@ header {
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  background-image: linear-gradient(to left, black, grey);
+  background-image: linear-gradient(to right, grey, black);
   font-weight: bold;
 }
 
@@ -42,9 +40,17 @@ nav {
   grid-area: navGrid;
 }
 
+.text-warning {
+  color: #ffcccc;
+}
+
 .colorRosa {
   color: #ffcccc;
   transition: 1s;
+}
+
+.bgColorPink {
+  background-image: linear-gradient(to left, pink, beige);
 }
 
 .colorRosa:hover {
@@ -461,6 +467,8 @@ input[type="reset"] {
 /* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
 
 @media only screen and (min-width: 1024px) {
+  /* SOBREESCRIBIR EL METODO DE BOOTSTRAP */
+
   /* layout del index */
   .bodyGrid {
     height: 80vh;
