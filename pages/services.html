@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lincoln Eventos</title>
 
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animaciones -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,133 +34,198 @@
       rel="stylesheet"
     />
 
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
-    <div>
-      <header class="sticky">
+    <div class="container-fluid">
+      <header class="row sticky-top">
         <!-- Header -->
 
         <div class="size75">
           <a href="../index.html">
-            <img src="../images/header/Logo.jpg" alt="Logo" class="logo" />
+            <img
+              src="../images/header/Logo.jpg"
+              alt="Logo"
+              class="logo animate__animated animate__fadeIn"
+            />
           </a>
         </div>
-
         <!-- BANNER CAROUSEL-->
       </header>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html" class="colorRosa"> Inicio </a>
-          </li>
-          <li>
-            <a href="services.html" class="colorRosa"> Servicios </a>
-          </li>
-          <li>
-            <a href="team.html" class="colorRosa"> Staff </a>
-          </li>
-          <li>
-            <a href="work.html" class="colorRosa"> Nuestros Trabajos </a>
-          </li>
-          <li>
-            <a href="contact.html" class="colorRosa"> Contacto</a>
-          </li>
-        </ul>
+      <nav class="row navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler bgColorPink"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="../index.html" class="colorRosa">
+                <span class="material-icons"> home </span>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="services.html" class="colorRosa">
+                <span class="material-icons"> info </span>
+                <span> Servicios </span>
+              </a>
+            </li>
+            <li>
+              <a href="team.html" class="colorRosa">
+                <span class="material-icons"> people </span>
+                Staff
+              </a>
+            </li>
+            <li>
+              <a href="work.html" class="colorRosa">
+                <span class="material-icons"> work </span>
+                Nuestros Trabajos
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="colorRosa">
+                <span class="material-icons"> contact_page </span>
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <!-- Inicio de Sección -->
-      <section>
-        <!-- Services -->
-        <article>
-          <div>
-            <h1 class="center">Servicios</h1>
-          </div>
-          <div>
-            <ul class="gridUl animate__animated animate__fadeIn">
-              <li class="w3-card area">
-                <p>Atencion personalizada</p>
+    </div>
+
+    <!-- Inicio de Sección -->
+    <section class="container-fluid">
+      <!-- Services -->
+      <article class="">
+        <div class="row d-flex justify-content-center">
+          <h1 class="center">Servicios</h1>
+        </div>
+        <div>
+          <ul class="row d-flex flex-md-wrap animate__animated animate__fadeIn">
+            <li class="col-md-4 card bgColorPink" style="width: 100%">
+              <div class="card-body">
+                <p class="card-title">Atencion personalizada</p>
                 <div>
                   <img
                     src="../images/services/Mozo.jpeg"
                     alt="Mozo"
-                    class="size350450 borderRadius50"
+                    class="card-img borderRadius50 img-fluid"
                   />
                 </div>
-                <p class="justify w3-container">
+                <p class="card-text text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veritatis, quaerat deserunt! Dolore quod architecto minus
                   atque obcaecati recusandae tempore, sit porro eaque non
                   aspernatur magni animi ex perferendis id corrupti.
                 </p>
-              </li>
-              <li class="w3-card area2">
-                <p>Orientacion al Cliente</p>
+              </div>
+            </li>
+
+            <li class="col-md-4 card bgColorPink" style="width: 100%">
+              <div class="card-body">
+                <p class="card-title">Orientacion al Cliente</p>
                 <div>
                   <img
                     src="../images/services/Mozo2.jpeg"
                     alt="Cliente"
-                    class="borderRadius50"
+                    class="card-img borderRadius50 img-fluid"
                   />
                 </div>
-                <p class="justify w3-container">
+                <p class="card-text text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                   quos itaque cupiditate accusamus recusandae consequatur a,
                   cumque vel magni vitae, omnis laboriosam sapiente ullam, quam
                   suscipit ab ducimus dolorum tenetur.
                 </p>
-              </li>
-              <li class="w3-card area3">
+              </div>
+            </li>
+
+            <li class="col-md-4 card bgColorPink" style="width: 100%">
+              <div class="card-body">
                 <p>Diseño</p>
                 <div>
                   <img
                     src="../images/services/Collage.PNG"
                     alt="Diseño"
-                    class="borderRadius50"
+                    class="card-img borderRadius50 img-fluid"
                   />
                 </div>
-                <p class="justify w3-container">
+                <p class="card-text text-justify">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Officia non explicabo ea accusantium corrupti quam eaque
                   voluptatibus, obcaecati quia! Maxime vero natus pariatur
                   veniam sunt impedit corporis mollitia ex aut!
                 </p>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </section>
-      <!-- Fin de Sección -->
-      <footer class="fixed">
-        <div class="center">
-          <div>
-            SEGUINOS EN NUESTRAS REDES
-            <span> | </span>
-            <a
-              href="https://www.facebook.com/lincolneventoslp"
-              target="_blank"
-              class="redes"
-            >
-              <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            </a>
-
-            <span> | </span>
-            <a
-              href="https://www.instagram.com/lincolneventos/"
-              target="_blank"
-              class="redes"
-            >
-              <i class="fa fa-instagram w3-hover-opacity"></i>
-            </a>
-          </div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+      </article>
+    </section>
+    <!-- Fin de Sección -->
+    <footer
+      class="fixed-bottom d-flex justify-content-around animate__animated animate__fadeIn"
+    >
+      <div>
+        SEGUINOS EN NUESTRAS REDES
+        <span> | </span>
+        <a
+          href="https://www.facebook.com/lincolneventoslp"
+          target="_blank"
+          class="redes"
+        >
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        </a>
+
+        <span> | </span>
+
+        <a
+          href="https://www.instagram.com/lincolneventos/"
+          target="_blank"
+          class="redes"
+        >
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
