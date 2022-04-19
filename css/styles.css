@@ -8,7 +8,7 @@
 /* Mobile First */
 body {
   font-family: "Roboto Serif", serif;
-  background-image: linear-gradient(to left, pink, white);
+  background-image: linear-gradient(to left, pink, whitesmoke);
 }
 
 header {
@@ -53,7 +53,7 @@ article {
 }
 
 footer {
-  background-image: linear-gradient(to left, pink, beige);
+  background-image: linear-gradient(to right, grey, black);
   font-weight: bold;
   transition: 1s;
 }
@@ -62,7 +62,7 @@ footer:hover {
   transform: scale(1.01);
 }
 
-h1 {
+/* h1 {
   font-family: "Corinthia", cursive;
   font-size: 50px;
   letter-spacing: 5px;
@@ -71,13 +71,45 @@ h1 {
 
 h1:hover {
   transform: scale(1.05);
+} */
+
+h1 {
+  font-family: "Corinthia", cursive;
+  font-size: 60px;
+  letter-spacing: 5px;
+  /* transition: 1s; */
 }
+
+h1:hover {
+  /* transform: scale(1.05); */
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h2 {
-  transition: 1s;
+  /* transition: 1s; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif "Corinthia",
+    cursive;
+  font-size: 40px;
 }
 
 h2:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 
 a {
@@ -88,7 +120,7 @@ a {
 /* El vínculo común y corriente, en reposo. */
 
 a:hover {
-  color: white;
+  color: whitesmoke;
 }
 
 /*Cuando se pasa el mouse por encima. */
@@ -107,11 +139,6 @@ i {
 
 i:hover {
   transform: scale(1.2);
-}
-
-.size25 {
-  width: 15%;
-  height: 100%;
 }
 
 li {
@@ -144,6 +171,11 @@ img {
 
 img:hover {
   transform: scale(1.05);
+}
+
+.imgIndex {
+  width: 200%;
+  height: 200%;
 }
 
 label {
@@ -186,27 +218,53 @@ svg:hover {
   border-radius: 50px;
 }
 
+.footerColor {
+  color: whitesmoke;
+}
+
 .redes {
   font-size: 25px;
   /* margin: 5px; */
 }
 
 .redes:hover {
-  color: grey;
+  color: #0277bd;
 }
 
 .redes:active {
-  color: blue;
+  color: grey;
 }
 
 /* .redes:visited{
     color: blue;
 } */
 
+.size25 {
+  width: 25px;
+  height: 25px;
+}
+
+.size50 {
+  width: 50px;
+  height: 50px;
+}
+
 .size75 {
   height: 75px;
   width: 75px;
 }
+
+.size400 {
+  height: 400px;
+  width: 400px;
+}
+.size450 {
+  height: 450px;
+  width: 450px;
+}
+
+
+
 
 textarea {
   width: 300px;
@@ -271,7 +329,7 @@ label {
 /* Style the submit button */
 input[type="submit"] {
   background-color: black;
-  color: white;
+  color: whitesmoke;
   padding: 10px 16px;
   border: none;
   border-radius: 4px;
@@ -281,7 +339,7 @@ input[type="submit"] {
 
 input[type="reset"] {
   background-color: black;
-  color: white;
+  color: whitesmoke;
   padding: 10px 16px;
   border: none;
   border-radius: 4px;
