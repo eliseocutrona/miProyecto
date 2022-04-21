@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* aplicamos reset */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box; }
 
 /* Mobile First */
@@ -165,12 +165,12 @@ svg {
 .footerColor {
   color: whitesmoke; }
 
-.designCard {
+.card {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden; }
 
-.designCard:before {
-  content: "";
+.card:before {
+  content: '';
   position: absolute;
   left: calc(-100% + 4px);
   top: 0;
@@ -179,17 +179,22 @@ svg {
   background: #333;
   z-index: 1;
   transition: 0.5s ease-in-out; }
-  .designCard:before:hover:before {
-    left: 0; }
-  .designCard:before:nth-child(1):before {
-    background-image: linear-gradient(to left, whitesmoke, pink); }
-  .designCard:before:nth-child(2):before {
-    background-image: linear-gradient(to left, whitesmoke, pink); }
-  .designCard:before:nth-child(3):before {
-    background-image: linear-gradient(to left, whitesmoke, pink); }
-  .designCard:before div {
-    position: relative;
-    z-index: 1; }
+
+.card:hover:before {
+  left: 0; }
+
+.card:nth-child(1):before {
+  background: linear-gradient(to left, pink, beige); }
+
+.card:nth-child(2):before {
+  background: linear-gradient(to left, pink, beige); }
+
+.card:nth-child(3):before {
+  background: linear-gradient(to left, pink, beige); }
+
+.card div {
+  position: relative;
+  z-index: 1; }
 
 .redes {
   font-size: 25px;

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* aplicamos reset */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -226,39 +226,42 @@ svg {
   color: $color1;
 }
 
-.designCard {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.card {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 
-.designCard:before {
-  content: "";
-  position: absolute;
-  left: calc(-100% + 4px);
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #333;
-  z-index: 1;
-  transition: 0.5s ease-in-out;
-  &:hover:before {
-    left: 0;
-  }
-
-  &:nth-child(1):before {
-    background-image: $bgcolorCardHover;
-  }
-  &:nth-child(2):before {
-    background-image: $bgcolorCardHover;
-  }
-  &:nth-child(3):before {
-    background-image: $bgcolorCardHover;
-  }
-  div {
-    position: relative;
-    z-index: 1;
-  }
+.card:before {
+	content: '';
+	position: absolute;
+	left: calc(-100% + 4px);
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	z-index: 1;
+	transition: 0.5s ease-in-out;
 }
+
+.card:hover:before {
+	left: 0;
+}
+
+.card:nth-child(1):before {
+	background: $bgcolorCard;
+}
+.card:nth-child(2):before {
+	background: $bgcolorCard;
+}
+.card:nth-child(3):before {
+	background: $bgcolorCard;
+}
+
+.card div {
+	position: relative;
+	z-index: 1;
+}
+
 
 .redes {
   font-size: 25px;
