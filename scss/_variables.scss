@@ -1,0 +1,24 @@
+$font: "Roboto Serif", serif;
+$fontH2: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif "Corinthia", cursive;
+$transition: 1s;
+$scale: scale(1.1);
+$scale2: scale(1.05);
+
+$borderContact: 1px solid #ccc;
+$vertical: vertical;
+$paddingContact: 12px;
+$marginTopContact: 5px;
+
+$color1: whitesmoke;
+$color2: beige;
+$color3: black;
+$color4: pink;
+$color5: #ffcccc;
+
+$bgBody: linear-gradient(to left, $color4, $color1);
+$bgHeader: linear-gradient(to left, $color4, $color3);
+$bgNav: linear-gradient(to right, grey, $color3);
+$fwNav: bold;
+$bgcolorCard: linear-gradient(to left, $color4, $color2);
+$bgcolorCardHover: linear-gradient(to left, $color1, $color4);

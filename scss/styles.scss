@@ -1,25 +1,16 @@
 @charset "UTF-8";
 /* aplicamos reset */
+@import "variables.scss";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-$color1: whitesmoke;
-$color2: beige;
-$color3: black;
-$color4: pink;
-
-$bgBody: linear-gradient(to left, $color4, $color1);
-$bgHeader: linear-gradient(to left, $color4, $color3);
-$bgNav: linear-gradient(to right, grey, $color3);
-$bgcolorCard: linear-gradient(to left, $color4, $color2);
-$bgcolorCardHover: linear-gradient(to left, $color1, $color4);
-
 /* Mobile First */
 body {
-  font-family: "Roboto Serif", serif;
+  font-family: $font;
   background-image: $bgBody;
 }
 
@@ -29,16 +20,16 @@ header {
 
 nav {
   background-image: $bgNav;
-  font-weight: bold;
+  font-weight: $fwNav;
 }
 
 .colorRosa {
-  color: #ffcccc;
-  transition: 1s;
+  color: $color5;
+  // transition: $transition;
 
-  &:hover {
-    transform: scale(2);
-  }
+  // &:hover {
+  //   transform: scale(2);
+  // }
 }
 
 .bgColorPink {
@@ -67,7 +58,7 @@ article {
 footer {
   background-image: $bgNav;
   font-weight: bold;
-  transition: 1s;
+  transition: $transition;
 
   &:hover {
     transform: scale(1.01);
@@ -108,14 +99,12 @@ h1 {
 
 h2 {
   /* transition: 1s; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif "Corinthia",
-    cursive;
+  font-family: $fontH2;
   font-size: 40px;
 
   &:hover {
     /* transform: scale(1.05); */
-    animation-duration: 1s;
+    animation-duration: $transition;
     animation-name: aparecer;
     animation-iteration-count: infinite;
   }
@@ -141,7 +130,7 @@ ul {
 }
 
 i {
-  transition: 1s;
+  transition: $transition;
   &:hover {
     transform: scale(1.2);
   }
@@ -172,7 +161,7 @@ p {
 img {
   max-width: 100%;
   max-height: 100%;
-  transition: 1s;
+  transition: $transition;
 
   &:hover {
     transform: scale(1.05);
@@ -180,41 +169,41 @@ img {
 }
 
 .imgIndex {
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
 }
 
 label {
-  transition: 1s;
+  transition: $transition;
   &:hover {
-    transform: scale(1.05);
+    transform: $scale2;
   }
 }
 
 textarea {
-  transition: 1s;
+  transition: $transition;
   &:hover {
-    transform: scale(1.05);
+    transform: $scale2;
   }
 }
 
 input {
-  transition: 1s;
+  transition: $transition;
   &:hover {
-    transform: scale(1.05);
+    transform: $scale2;
   }
 }
 
 svg {
-  transition: 1s;
+  transition: $transition;
   &:hover {
-    transform: scale(1.1);
+    transform: $scale;
   }
 }
 
 :root {
   --animate-duration: 4s;
-  --animate-delay: 1s;
+  --animate-delay: $transition;
 }
 
 .logo {
@@ -227,41 +216,42 @@ svg {
 }
 
 .card {
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-}
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 
-.card:before {
-	content: '';
-	position: absolute;
-	left: calc(-100% + 4px);
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #333;
-	z-index: 1;
-	transition: 0.5s ease-in-out;
-}
+  &:hover:before {
+    left: 0;
+  }
 
-.card:hover:before {
-	left: 0;
-}
+  & {
+    div {
+      position: relative;
+      z-index: 1;
+    }
+  }
 
-.card:nth-child(1):before {
-	background: $bgcolorCard;
-}
-.card:nth-child(2):before {
-	background: $bgcolorCard;
-}
-.card:nth-child(3):before {
-	background: $bgcolorCard;
-}
+  &:before {
+    content: "";
+    position: absolute;
+    left: calc(-100% + 4px);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
 
-.card div {
-	position: relative;
-	z-index: 1;
+  &:nth-child(1):before {
+    background: $bgcolorCard;
+  }
+  &:nth-child(2):before {
+    background: $bgcolorCard;
+  }
+  &:nth-child(3):before {
+    background: $bgcolorCard;
+  }
 }
-
 
 .redes {
   font-size: 25px;
@@ -269,10 +259,10 @@ svg {
   &:hover {
     color: #0277bd;
   }
-}
 
-.redes:active {
-  color: grey;
+  &:active {
+    color: grey;
+  }
 }
 
 /* .redes:visited{
@@ -295,12 +285,16 @@ svg {
 
 .size400 {
   height: 400px;
-  width: 400px;
+  // width: 400px;
 }
 
 .size450 {
   height: 450px;
-  width: 450px;
+  // width: px;
+}
+.size450b {
+  height: 450px;
+  width: 300px;
 }
 
 textarea {
@@ -322,13 +316,13 @@ textarea {
 
 input[type="submit"] {
   width: 100%;
-  margin-top: 5px;
+  margin-top: $marginTopContact;
   margin-bottom: 5px;
 }
 
 input[type="reset"] {
   width: 100%;
-  margin-top: 5px;
+  margin-top: $marginTopContact;
   margin-bottom: 40px;
 }
 
@@ -337,11 +331,11 @@ input[type="text"],
 select,
 textarea {
   width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
+  padding: $paddingContact;
+  border: $borderContact;
   border-radius: 4px;
   box-sizing: border-box;
-  resize: vertical;
+  resize: $vertical;
 }
 
 /* Style inputs, select elements and textareas */
@@ -349,11 +343,11 @@ input[type="email"],
 select,
 textarea {
   width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
+  padding: $paddingContact;
+  border: $borderContact;
   border-radius: 4px;
   box-sizing: border-box;
-  resize: vertical;
+  resize: $vertical;
 }
 
 /* Style the label to display next to the inputs */
@@ -365,12 +359,12 @@ label {
 /* Style the submit button */
 input[type="submit"] {
   background-color: $color3;
-  color: whitesmoke;
+  color: $color1;
   padding: 10px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  /* float: right; */
+  // float: right;
 }
 
 input[type="reset"] {
@@ -382,13 +376,6 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 /* Floating column for labels: 25% width */
 .col-25 {
   width: 25%;
@@ -396,9 +383,9 @@ input[type="reset"] {
 }
 
 .showUp {
-  transition: 1s;
+  transition: $transition;
   &:hover {
-    transform: scale(1.1);
+    transform: $scale;
   }
 }
 
