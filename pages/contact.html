@@ -123,7 +123,12 @@
         class="d-flex justify-content-center align-items-center flex-wrap flex-md-nowrap"
       >
         <div class="container-fluid">
-          <form>
+          <form
+            action="mailto:eliseocutrona@gmail.com"
+            method="post"
+            name="Contacto"
+            enctype="text/plain"
+          >
             <fieldset>
               <legend>
                 <h1>Contacto</h1>
@@ -157,7 +162,7 @@
                 <input
                   type="text"
                   id="fname"
-                  name="firstname"
+                  name="Nombre y Apellido"
                   placeholder="Nombre y Apellido"
                 />
               </div>
@@ -179,7 +184,7 @@
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="Email"
                   placeholder="Email"
                 />
               </div>
@@ -207,7 +212,6 @@
               </div>
 
               <div class="row d-flex justify-content-center align-items-center">
-                <!-- <label for="subject">Mensaje</label> -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -221,8 +225,8 @@
                   />
                 </svg>
                 <textarea
-                  name="subject"
-                  id="subject"
+                  name="Asunto"
+                  id="asunto"
                   cols="30"
                   rows="10"
                   placeholder="Me gustaria saber mas información acerca del servicio.."
