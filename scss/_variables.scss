@@ -14,11 +14,13 @@ $color1: whitesmoke;
 $color2: beige;
 $color3: black;
 $color4: pink;
-$color5: #ffcccc;
+$color5: pink;
+$color6: #800040;
+$color7:grey;
 
-$bgBody: linear-gradient(to left, $color4, $color1);
-$bgHeader: linear-gradient(to left, $color4, $color3);
-$bgNav: linear-gradient(to right, grey, $color3);
+$bgBody: linear-gradient(to left,  $color2,$color4);
+$bgHeader:linear-gradient(to left,  $color2,$color6);
+$bgNav: linear-gradient(to right, $color7, $color3);
 $fwNav: bold;
 $bgcolorCard: linear-gradient(to left, $color4, $color2);
 $bgcolorCardHover: linear-gradient(to left, $color1, $color4);

@@ -8,17 +8,17 @@
 /* Mobile First */
 body {
   font-family: "Roboto Serif", serif;
-  background-image: linear-gradient(to left, pink, whitesmoke); }
+  background-image: linear-gradient(to left, beige, pink); }
 
 header {
-  background-image: linear-gradient(to left, pink, black); }
+  background-image: linear-gradient(to left, beige, #800040); }
 
 nav {
   background-image: linear-gradient(to right, grey, black);
   font-weight: bold; }
 
-.colorRosa {
-  color: #ffcccc; }
+.colorMenu {
+  color: pink; }
 
 .bgColorPink {
   background-image: linear-gradient(to left, pink, beige); }
