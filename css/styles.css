@@ -1,60 +1,63 @@
 @charset "UTF-8";
 /* aplicamos reset */
+/*Creamos el bucle para usar los valores del mapa*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-/* Mobile First */
 body {
-  font-family: "Roboto Serif", serif;
-  background-image: linear-gradient(to left, beige, pink); }
+  background-image: linear-gradient(to left, beige, pink);
+  font-family: "Roboto Serif"; }
 
 header {
   background-image: linear-gradient(to left, beige, #800040); }
 
 nav {
-  background-image: linear-gradient(to right, grey, black);
-  font-weight: bold; }
-
-.colorMenu {
-  color: pink; }
-
-.bgColorPink {
-  background-image: linear-gradient(to left, pink, beige); }
-
-.bold {
-  font-weight: bold; }
+  background-image: linear-gradient(to right, grey, black); }
 
 section {
-  font-weight: bold;
   background-size: 100%;
   image-resolution: 100%;
   margin-bottom: 40px; }
-
-.boxBottom {
-  margin-bottom: 20px; }
-
-article {
-  background-color: none; }
 
 footer {
   background-image: linear-gradient(to right, grey, black);
   font-weight: bold;
   transition: 1s; }
-  footer:hover {
-    transform: scale(1.01); }
 
-/* h1 {
-    font-family: "Corinthia", cursive;
-    font-size: 50px;
-    letter-spacing: 5px;
-    transition: 1s;
-  }
-  
-  h1:hover {
-    transform: scale(1.05);
-  } */
+footer:hover {
+  transform: scale(1.01); }
+
+.redes--instagram {
+  color: #0277bd;
+  font-size: 25px; }
+  .redes--instagram:hover {
+    color: #0277bd; }
+  .redes--instagram:active {
+    color: grey; }
+
+.redes--facebook {
+  color: #6a8a9d;
+  font-size: 25px; }
+  .redes--facebook:hover {
+    color: #0277bd; }
+  .redes--facebook:active {
+    color: grey; }
+
+/* Mobile First */
+.bgColorPink {
+  background-image: linear-gradient(to left, pink, beige); }
+
+.bold, .colorMenu {
+  font-weight: bold; }
+
+.colorMenu {
+  color: pink; }
+
+.boxBottom {
+  margin-bottom: 20px; }
+
 h1 {
   font-family: "Corinthia", cursive;
   font-size: 60px;
@@ -117,8 +120,7 @@ p {
   margin: 5px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
-  text-align: justify;
-  /* overflow: visible; */ }
+  text-align: justify; }
 
 img {
   max-width: 100%;
@@ -131,19 +133,13 @@ img {
   width: 100%;
   height: 100%; }
 
-label {
-  transition: 1s; }
-  label:hover {
-    transform: scale(1.05); }
-
+label,
+input,
 textarea {
   transition: 1s; }
+  label:hover,
+  input:hover,
   textarea:hover {
-    transform: scale(1.05); }
-
-input {
-  transition: 1s; }
-  input:hover {
     transform: scale(1.05); }
 
 svg {
@@ -187,24 +183,13 @@ svg {
   .card:nth-child(3):before {
     background: linear-gradient(to left, pink, beige); }
 
-.redes {
-  font-size: 25px;
-  /* margin: 5px; */ }
-  .redes:hover {
-    color: #0277bd; }
-  .redes:active {
-    color: grey; }
-
-/* .redes:visited{
-      color: blue;
-  } */
 .size25 {
-  width: 25px;
-  height: 25px; }
+  height: 25px;
+  width: 25px; }
 
 .size50 {
-  width: 50px;
-  height: 50px; }
+  height: 50px;
+  width: 50px; }
 
 .size75 {
   height: 75px;
@@ -220,10 +205,6 @@ svg {
   height: 450px;
   width: 300px; }
 
-textarea {
-  width: 300px;
-  height: 150px; }
-
 .center {
   text-align: center; }
 
@@ -233,20 +214,18 @@ textarea {
 .borderRadius50 {
   border-radius: 50px; }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px; }
 
 input[type="reset"] {
-  width: 100%;
-  margin-top: 5px;
   margin-bottom: 40px; }
 
 /* Style inputs, select elements and textareas */
+input[type="email"], textarea,
 input[type="text"],
-select,
-textarea {
+select {
   width: 75%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -254,32 +233,17 @@ textarea {
   box-sizing: border-box;
   resize: vertical; }
 
-/* Style inputs, select elements and textareas */
-input[type="email"],
-select,
 textarea {
   width: 75%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical; }
+  height: 150px; }
 
 /* Style the label to display next to the inputs */
 label {
   padding: 12px 12px 12px 0;
   display: inline-block; }
 
-/* Style the submit button */
-input[type="submit"] {
-  background-color: black;
-  color: whitesmoke;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type="reset"] {
+/* Style the submit & reset button */
+input[type="reset"], input[type="submit"], input[type="reset"] {
   background-color: black;
   color: whitesmoke;
   padding: 10px 16px;

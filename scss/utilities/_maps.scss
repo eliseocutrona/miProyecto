@@ -1,0 +1,67 @@
+$redes: (/*Declaramos nuestro mapa*/ instagram: #0277bd, facebook: #6a8a9d);
+
+/*Creamos el bucle para usar los valores del mapa*/
+
+$estilos: (
+  bgBody: linear-gradient(to left, $color2, $color4),
+  bgHeader: linear-gradient(to left, $color2, $color6),
+  bgNav: linear-gradient(to right, $color7, $color3),
+  fuenteBody: "Roboto Serif",
+  fuenteNav: bold,
+  bgSize: 100%,
+  mBottom: 40px,
+  resolucion: 100%,
+  padding0: 0,
+  margin0: 0,
+  caja: border-box,
+);
+
+* {
+  padding: map-get($estilos, padding0);
+  margin: map-get($estilos, margin0);
+  box-sizing: map-get($estilos, caja);
+}
+
+body {
+  background-image: map-get($estilos, bgBody);
+  font-family: map-get($estilos, fuenteBody);
+}
+
+header {
+  background-image: map-get($estilos, bgHeader);
+}
+
+nav {
+  background-image: map-get($estilos, bgNav);
+  font-weight: map-get($estilos, fwNav);
+}
+
+section {
+  font-weight: map-get($estilos, fwNav);
+  background-size: map-get($estilos, bgSize);
+  image-resolution: map-get($estilos, resolucion);
+  margin-bottom: map-get($estilos, mBottom);
+}
+
+footer {
+  background-image: map-get($estilos, bgNav);
+  font-weight: map-get($estilos, fuenteNav);
+  transition: 1s;
+}
+footer:hover {
+  transform: scale(1.01);
+}
+
+@each $red, $color in $redes {
+  .redes--#{$red} {
+    color: $color;
+    font-size: 25px;
+
+    &:hover {
+      color: #0277bd;
+    }
+    &:active {
+      color: grey;
+    }
+  }
+}
