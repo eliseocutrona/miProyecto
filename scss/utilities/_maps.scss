@@ -3,9 +3,9 @@ $redes: (/*Declaramos nuestro mapa*/ instagram: #0277bd, facebook: #6a8a9d);
 /*Creamos el bucle para usar los valores del mapa*/
 
 $estilos: (
-  bgBody: linear-gradient(to left, $color2, $color4),
-  bgHeader: linear-gradient(to left, $color2, $color6),
-  bgNav: linear-gradient(to right, $color7, $color3),
+  bgBody: linear-gradient(to left, $color3, $color8),
+  bgHeader: linear-gradient(to left, $color3, $color8),
+  bgNav: linear-gradient(to right, $color3, $color8),
   fuenteBody: "Roboto Serif",
   fuenteNav: bold,
   bgSize: 100%,
@@ -54,7 +54,7 @@ footer:hover {
 
 @each $red, $color in $redes {
   .redes--#{$red} {
-    color: $color;
+    color: $color2;
     font-size: 25px;
 
     &:hover {

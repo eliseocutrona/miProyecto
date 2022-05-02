@@ -13,7 +13,7 @@
   font-weight: bold;
 }
 .colorMenu {
-  color: $color5;
+  color: $color2;
   @extend .bold;
 }
 
@@ -22,6 +22,39 @@
 }
 
 h1 {
+  color: $color2;
+  font-family: "Corinthia", cursive;
+  font-size: 60px;
+  letter-spacing: 5px;
+  /* transition: 1s; */
+  &:hover {
+    /* transform: scale(1.05); */
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+}
+
+.letra3{
+  background-image: linear-gradient(to right, $color3, $color8);
+}
+
+.letra {
+  /* transition: 1s; */
+  color: $color2;
+  font-family: $fontH2;
+  font-size: 40px;
+
+  &:hover {
+    /* transform: scale(1.05); */
+    animation-duration: $transition;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+}
+
+.letra2 {
+  color: $color2;
   font-family: "Corinthia", cursive;
   font-size: 60px;
   letter-spacing: 5px;
@@ -45,6 +78,7 @@ h1 {
 
 h2 {
   /* transition: 1s; */
+  color: $color2;
   font-family: $fontH2;
   font-size: 40px;
 
@@ -90,12 +124,9 @@ li {
   border-radius: 50px;
 }
 
-div {
-  background-color: none;
-}
-
 p {
-  background-color: #f3cdcd;
+  font-weight: bold;
+  background-image: linear-gradient(to left, $color6, $color2);
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
@@ -145,7 +176,7 @@ svg {
 }
 
 .footerColor {
-  color: $color1;
+  color: $color2;
 }
 
 .card {

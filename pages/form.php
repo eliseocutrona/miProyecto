@@ -7,8 +7,6 @@ $telefono = $_POST['telefono'];
 $asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 
-
-
 // vamos a mostrar un texto plano
 $header .= "Content-Type: text/plain";
 
@@ -33,3 +31,4 @@ mail($destinatario, $asunto, utf8_decode($mensaje), $header);
 
 // Redireccion al haber enviado el form
 header('Location:exito.html');
+?>
