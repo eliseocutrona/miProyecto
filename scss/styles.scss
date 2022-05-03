@@ -26,9 +26,7 @@ h1 {
   font-family: "Corinthia", cursive;
   font-size: 60px;
   letter-spacing: 5px;
-  /* transition: 1s; */
   &:hover {
-    /* transform: scale(1.05); */
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -40,13 +38,11 @@ h1 {
 }
 
 .letra {
-  /* transition: 1s; */
   color: $color2;
   font-family: $fontH2;
   font-size: 40px;
 
   &:hover {
-    /* transform: scale(1.05); */
     animation-duration: $transition;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -58,9 +54,7 @@ h1 {
   font-family: "Corinthia", cursive;
   font-size: 60px;
   letter-spacing: 5px;
-  /* transition: 1s; */
   &:hover {
-    /* transform: scale(1.05); */
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -77,13 +71,11 @@ h1 {
 }
 
 h2 {
-  /* transition: 1s; */
   color: $color2;
   font-family: $fontH2;
   font-size: 40px;
 
   &:hover {
-    /* transform: scale(1.05); */
     animation-duration: $transition;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -119,7 +111,6 @@ i {
 li {
   background-color: none;
   padding: 5px;
-  /* margin: 5px; */
   text-transform: initial;
   border-radius: 50px;
 }
@@ -171,7 +162,6 @@ svg {
 }
 
 .logo {
-  /* background-color: black; */
   border-radius: 50px;
 }
 
@@ -320,11 +310,3 @@ input[type="submit"] {
   }
 }
 
-/* media queries*/
-/* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
-/* @media only screen and (min-width: 1024px) { */
-/* SOBREESCRIBIR EL METODO DE BOOTSTRAP */
-/* layout del index */
-/* se utiliza para poner el layout para "Servicios" y "Staff" */
-/* se utiliza para poner el layout para "Nuestros Trabajos"*/
-/* } */
