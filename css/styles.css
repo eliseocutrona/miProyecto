@@ -7,11 +7,11 @@
   box-sizing: border-box; }
 
 body {
-  background-image: linear-gradient(to left, black, #a00050);
+  background-image: linear-gradient(to left, #a00050, #a00050);
   font-family: "Roboto Serif"; }
 
 header {
-  background-image: linear-gradient(to left, black, #a00050); }
+  background-image: linear-gradient(to left, #a00050, #a00050); }
 
 nav {
   background-image: linear-gradient(to right, black, #a00050); }
@@ -141,7 +141,7 @@ li {
 
 p {
   font-weight: bold;
-  background-image: linear-gradient(to left, #800040, beige);
+  background-image: linear-gradient(to left, #a00050, beige);
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
@@ -226,6 +226,9 @@ svg {
 
 .size450 {
   height: 450px; }
+
+.size500 {
+  height: 500px; }
 
 .size450b {
   height: 450px;

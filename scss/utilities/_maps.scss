@@ -3,8 +3,8 @@ $redes: (/*Declaramos nuestro mapa*/ instagram: #0277bd, facebook: #6a8a9d);
 /*Creamos el bucle para usar los valores del mapa*/
 
 $estilos: (
-  bgBody: linear-gradient(to left, $color3, $color8),
-  bgHeader: linear-gradient(to left, $color3, $color8),
+  bgBody: linear-gradient(to left, $color8, $color8),
+  bgHeader: linear-gradient(to left, $color8, $color8),
   bgNav: linear-gradient(to right, $color3, $color8),
   fuenteBody: "Roboto Serif",
   fuenteNav: bold,

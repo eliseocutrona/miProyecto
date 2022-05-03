@@ -35,7 +35,7 @@ h1 {
   }
 }
 
-.letra3{
+.letra3 {
   background-image: linear-gradient(to right, $color3, $color8);
 }
 
@@ -126,7 +126,7 @@ li {
 
 p {
   font-weight: bold;
-  background-image: linear-gradient(to left, $color6, $color2);
+  background-image: linear-gradient(to left, $color8, $color2);
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
@@ -240,9 +240,14 @@ svg {
 .size450 {
   @include sizesH(450px);
 }
+
+.size500 {
+  @include sizesH(500px);
+}
 .size450b {
   @include sizes(300px, 450px);
 }
+
 .center {
   text-align: center;
 }
