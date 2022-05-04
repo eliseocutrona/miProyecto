@@ -104,7 +104,7 @@ ul {
 i {
   transition: $transition;
   &:hover {
-    transform: scale(1.2);
+    transform: $scale;
   }
 }
 
@@ -131,7 +131,7 @@ img {
   transition: $transition;
 
   &:hover {
-    transform: scale(1.05);
+    transform: $scale;
   }
 }
 
@@ -309,4 +309,13 @@ input[type="submit"] {
     transform: $scale;
   }
 }
-
+.cardServices{
+  background-color: $color2;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: justify;
+ 
+}

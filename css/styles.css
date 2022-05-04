@@ -62,10 +62,8 @@ h1 {
   color: beige;
   font-family: "Corinthia", cursive;
   font-size: 60px;
-  letter-spacing: 5px;
-  /* transition: 1s; */ }
+  letter-spacing: 5px; }
   h1:hover {
-    /* transform: scale(1.05); */
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite; }
@@ -74,12 +72,10 @@ h1 {
   background-image: linear-gradient(to right, black, #a00050); }
 
 .letra {
-  /* transition: 1s; */
   color: beige;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif "Corinthia", cursive;
   font-size: 40px; }
   .letra:hover {
-    /* transform: scale(1.05); */
     animation-duration: 1s;
     animation-name: aparecer;
     animation-iteration-count: infinite; }
@@ -88,10 +84,8 @@ h1 {
   color: beige;
   font-family: "Corinthia", cursive;
   font-size: 60px;
-  letter-spacing: 5px;
-  /* transition: 1s; */ }
+  letter-spacing: 5px; }
   .letra2:hover {
-    /* transform: scale(1.05); */
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite; }
@@ -103,12 +97,10 @@ h1 {
     opacity: 1; } }
 
 h2 {
-  /* transition: 1s; */
   color: beige;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif "Corinthia", cursive;
   font-size: 40px; }
   h2:hover {
-    /* transform: scale(1.05); */
     animation-duration: 1s;
     animation-name: aparecer;
     animation-iteration-count: infinite; }
@@ -135,7 +127,6 @@ i {
 li {
   background-color: none;
   padding: 5px;
-  /* margin: 5px; */
   text-transform: initial;
   border-radius: 50px; }
 
@@ -153,7 +144,7 @@ img {
   max-height: 100%;
   transition: 1s; }
   img:hover {
-    transform: scale(1.05); }
+    transform: scale(1.01); }
 
 .imgIndex {
   width: 100%;
@@ -178,7 +169,6 @@ svg {
   --animate-delay: $transition; }
 
 .logo {
-  /* background-color: black; */
   border-radius: 50px; }
 
 .footerColor {
@@ -290,11 +280,11 @@ input[type="reset"], input[type="submit"], input[type="reset"] {
   .showUp:hover {
     transform: scale(1.1); }
 
-/* media queries*/
-/* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
-/* @media only screen and (min-width: 1024px) { */
-/* SOBREESCRIBIR EL METODO DE BOOTSTRAP */
-/* layout del index */
-/* se utiliza para poner el layout para "Servicios" y "Staff" */
-/* se utiliza para poner el layout para "Nuestros Trabajos"*/
-/* } */
+.cardServices {
+  background-color: beige;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: justify; }
