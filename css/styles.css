@@ -33,7 +33,7 @@ footer:hover {
   color: beige;
   font-size: 25px; }
   .redes--instagram:hover {
-    color: #0277bd; }
+    color: whitesmoke; }
   .redes--instagram:active {
     color: grey; }
 
@@ -41,7 +41,7 @@ footer:hover {
   color: beige;
   font-size: 25px; }
   .redes--facebook:hover {
-    color: #0277bd; }
+    color: whitesmoke; }
   .redes--facebook:active {
     color: grey; }
 
@@ -122,7 +122,7 @@ ul {
 i {
   transition: 1s; }
   i:hover {
-    transform: scale(1.2); }
+    transform: scale(1.05); }
 
 li {
   background-color: none;
@@ -162,7 +162,7 @@ textarea {
 svg {
   transition: 1s; }
   svg:hover {
-    transform: scale(1.1); }
+    transform: scale(1.05); }
 
 :root {
   --animate-duration: 4s;
@@ -191,7 +191,7 @@ svg {
     height: 100%;
     background: #333;
     z-index: 1;
-    transition: 0.5s ease-in-out; }
+    transition: 1s ease-in-out; }
   .card:nth-child(1):before {
     background: linear-gradient(to left, beige, #800040); }
   .card:nth-child(2):before {
@@ -278,7 +278,7 @@ input[type="reset"], input[type="submit"], input[type="reset"] {
 .showUp {
   transition: 1s; }
   .showUp:hover {
-    transform: scale(1.1); }
+    transform: scale(1.01); }
 
 .cardServices {
   background-color: beige;

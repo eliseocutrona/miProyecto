@@ -1,4 +1,4 @@
-$redes: (/*Declaramos nuestro mapa*/ instagram: #0277bd, facebook: #6a8a9d);
+$redes: (/*Declaramos nuestro mapa*/ instagram: whitesmoke, facebook: #6a8a9d);
 
 /*Creamos el bucle para usar los valores del mapa*/
 
@@ -49,7 +49,7 @@ footer {
   transition: 1s;
 }
 footer:hover {
-  transform: scale(1.01);
+  transform: $scale3;
 }
 
 @each $red, $color in $redes {
@@ -58,10 +58,10 @@ footer:hover {
     font-size: 25px;
 
     &:hover {
-      color: #0277bd;
+      color: $color1;
     }
     &:active {
-      color: grey;
+      color: $color7;
     }
   }
 }
