@@ -1,3 +1,3 @@
-# miProyecto
-Catering Lincoln Eventos
+# Catering Lincoln Eventos
+
 PROYECTO FINAL DEL CURSO DESARROLLO WEB DE CODERHOUSE
