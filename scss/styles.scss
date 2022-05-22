@@ -4,6 +4,69 @@
 @import "utilities/maps.scss";
 
 /* Mobile First */
+.bodyGrid {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "headerGrid"
+    "navGrid"
+    "sectionGrid"
+    "sectionGrid2"
+    "footerGrid";
+  // padre
+  // justify-content: center;
+  // align-content: center;
+
+  // hijos
+  align-items: center;
+}
+
+.headerGrid {
+  grid-area: headerGrid;
+}
+
+.navGrid {
+  grid-area: navGrid;
+}
+
+.mainGrid {
+  grid-area: mainGrid;
+}
+
+.sectionGrid {
+  grid-area: sectionGrid;
+}
+
+.sectionGrid2 {
+  grid-area: sectionGrid2;
+}
+
+.articleGrid {
+  grid-area: articleGrid;
+}
+
+.articleGrid2 {
+  grid-area: articleGrid2;
+}
+
+.footerGrid {
+  grid-area: footerGrid;
+}
+
+.flexServicios {
+  display: flex;
+  justify-content: center;
+}
+
+.flexCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexFooter {
+  display: flex;
+ justify-content: space-around;
+}
 
 .bgColorPink {
   background-image: $bgcolorCard;
@@ -117,7 +180,7 @@ li {
 
 p {
   font-weight: bold;
-  background-image: linear-gradient(to left, $color8, $color2);
+  background-image: linear-gradient(to left, $color2, $color2, $color1);
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
@@ -136,8 +199,8 @@ img {
 }
 
 .imgIndex {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
 }
 
 label,
@@ -237,7 +300,9 @@ svg {
 .size450b {
   @include sizes(300px, 450px);
 }
-
+.size100 {
+  @include sizes(100%, 210%);
+}
 .center {
   text-align: center;
 }
@@ -309,13 +374,44 @@ input[type="submit"] {
     transform: $scale3;
   }
 }
-.cardServices{
-  background-color: $color2;
+.cardServices {
+  background-image: linear-gradient(to left, $color2, $color2, $color1);
   font-weight: bold;
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: justify;
- 
+}
+
+/* media queries*/
+/* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
+
+@media only screen and (min-width: 1024px) {
+  /* layout del index */
+  .bodyGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid"
+      "navGrid  navGrid navGrid navGrid navGrid navGrid navGrid navGrid"
+      "sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid sectionGrid sectionGrid sectionGrid"
+      "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
+
+    // hijos
+
+    align-items: center;
+    justify-items: stretch;
+
+    // padre
+    justify-content: space-around;
+
+    // align-content: center;
+    // overflow:auto;
+  }
+
+  .flexCards {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

@@ -46,6 +46,48 @@ footer:hover {
     color: grey; }
 
 /* Mobile First */
+.bodyGrid {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "headerGrid" "navGrid" "sectionGrid" "sectionGrid2" "footerGrid";
+  align-items: center; }
+
+.headerGrid {
+  grid-area: headerGrid; }
+
+.navGrid {
+  grid-area: navGrid; }
+
+.mainGrid {
+  grid-area: mainGrid; }
+
+.sectionGrid {
+  grid-area: sectionGrid; }
+
+.sectionGrid2 {
+  grid-area: sectionGrid2; }
+
+.articleGrid {
+  grid-area: articleGrid; }
+
+.articleGrid2 {
+  grid-area: articleGrid2; }
+
+.footerGrid {
+  grid-area: footerGrid; }
+
+.flexServicios {
+  display: flex;
+  justify-content: center; }
+
+.flexCards {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flexFooter {
+  display: flex;
+  justify-content: space-around; }
+
 .bgColorPink {
   background-image: linear-gradient(to left, beige, #800040); }
 
@@ -132,7 +174,7 @@ li {
 
 p {
   font-weight: bold;
-  background-image: linear-gradient(to left, #a00050, beige);
+  background-image: linear-gradient(to left, beige, beige, whitesmoke);
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
@@ -147,8 +189,8 @@ img {
     transform: scale(1.01); }
 
 .imgIndex {
-  width: 100%;
-  height: 100%; }
+  width: 75%;
+  height: 75%; }
 
 label,
 input,
@@ -224,6 +266,10 @@ svg {
   height: 450px;
   width: 300px; }
 
+.size100 {
+  height: 210%;
+  width: 100%; }
+
 .center {
   text-align: center; }
 
@@ -281,10 +327,25 @@ input[type="reset"], input[type="submit"], input[type="reset"] {
     transform: scale(1.01); }
 
 .cardServices {
-  background-color: beige;
+  background-image: linear-gradient(to left, beige, beige, whitesmoke);
   font-weight: bold;
   padding: 5px;
   margin: 5px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: justify; }
+
+/* media queries*/
+/* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
+@media only screen and (min-width: 1024px) {
+  /* layout del index */
+  .bodyGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid" "navGrid  navGrid navGrid navGrid navGrid navGrid navGrid navGrid" "sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid sectionGrid sectionGrid sectionGrid" "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-around; }
+  .flexCards {
+    display: flex;
+    flex-wrap: nowrap; } }
