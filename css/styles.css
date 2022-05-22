@@ -76,7 +76,7 @@ footer:hover {
 .footerGrid {
   grid-area: footerGrid; }
 
-.flexServicios {
+.flexCenter {
   display: flex;
   justify-content: center; }
 
