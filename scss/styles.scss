@@ -287,6 +287,10 @@ svg {
 .size75 {
   @include sizes(75px, 75px);
 }
+
+.size350 {
+  @include sizesH(350px);
+}
 .size400 {
   @include sizesH(400px);
 }
