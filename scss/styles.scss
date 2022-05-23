@@ -5,7 +5,7 @@
 
 /* Mobile First */
 .bodyGrid {
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-areas:
     "headerGrid"
@@ -394,7 +394,7 @@ input[type="submit"] {
 @media only screen and (min-width: 1024px) {
   /* layout del index */
   .bodyGrid {
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-areas:
       "headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid"

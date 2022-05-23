@@ -47,7 +47,7 @@ footer:hover {
 
 /* Mobile First */
 .bodyGrid {
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-areas: "headerGrid" "navGrid" "sectionGrid" "sectionGrid2" "footerGrid";
   align-items: center; }
@@ -343,7 +343,7 @@ input[type="reset"], input[type="submit"], input[type="reset"] {
 @media only screen and (min-width: 1024px) {
   /* layout del index */
   .bodyGrid {
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-areas: "headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid" "navGrid  navGrid navGrid navGrid navGrid navGrid navGrid navGrid" "sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid2 sectionGrid sectionGrid sectionGrid sectionGrid" "footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid footerGrid";
     align-items: center;
